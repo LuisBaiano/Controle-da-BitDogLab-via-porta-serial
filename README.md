@@ -6,8 +6,6 @@ Este projeto demonstra como controlar LEDs e um buzzer conectados a um microcont
 
 ### Colaboradores
 
-Agradecemos aos seguintes colaboradores pelo suporte e contribuição no projeto:
-
 - [Camila Pereira](https://github.com/camilaqPereira)
 - [Ricardo Rodrigues](https://github.com/ricardorodriguespes17)
 - [Marlon Garrido](https://github.com/marlongarrido7)
