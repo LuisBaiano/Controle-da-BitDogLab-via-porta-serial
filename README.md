@@ -2,9 +2,9 @@
 
 ## Sobre o projeto
 
-Este projeto demonstra como controlar LEDs e um buzzer conectados a um microcontrolador RP2040 (Raspberry Pi Pico W) utilizando comandos via terminal serial UART. O código está escrito em C, empregando o Pico SDK, e integra as funcionalidades de ativação e desativação de periféricos através de um menu interativo.
+Este projeto demonstra como controlar LED RGB e um buzzer conectados Á placa de desenvolvimento BitDogLab utilizando comandos via terminal serial UART. O código está escrito em C, empregando o Pico SDK, e integra as funcionalidades de ativação e desativação de periféricos.
 
-### Colaboradores
+## Colaboradores
 
 - [Camila Pereira](https://github.com/camilaqPereira)
 - [Ricardo Rodrigues](https://github.com/ricardorodriguespes17)
@@ -26,11 +26,20 @@ Este projeto demonstra como controlar LEDs e um buzzer conectados a um microcont
 2. **Controle do Buzzer**:
 
    * Ativar o buzzer por 2 segundos (GPIO 21).
-3. **Interface de Comando**:
+3. **LISTA DE COMANDOS**:
 
-   * Menu interativo para seleção de opções via terminal serial UART.
+   Comandos pré-definidos para o controle do LED RGB e do buzzer:
+   * RED_LED_ON: aciona o led vermelho
+   * GREEN_LED_ON: aciona o led verde
+   * BLUE_LED_ON: aciona o led azul
+   * ALL_LEDS_ON: aciona todos os leds (cor branca)
+   * ALL LEDS_OFF: desativa tiodos os leds
+   * BUZZER_ON: aciona o buzzer por 2 segundos
 
-   ## Configuração do Hardware
+## Demostração
+
+
+## Configuração do Hardware
 
    ### Componentes Utilizados
 
@@ -38,10 +47,9 @@ Este projeto demonstra como controlar LEDs e um buzzer conectados a um microcont
    * **Placa de Desenvolvimento BitDogLab com uma Raspberry Pi Pico W**;
    * **LED RGB** conectado aos GPIOs 11 (vermelho), 12 (verde) e 13 (azul);
    * **Buzzer** conectado ao GPIO 21;
-   * **Resistor** de 330 Ω conectado ao LED RGB;
-   * Conexões de GND compartilhadas entre os periféricos e o Pico.
+   * Monitor serial PuTTY
 
-   ## Instruções de Uso
+## Instruções de Uso
 
    1. Configure o ambiente de desenvolvimento:
       * Instale o **Pico SDK** e configure-o no **VS Code**.
@@ -52,12 +60,5 @@ Este projeto demonstra como controlar LEDs e um buzzer conectados a um microcont
       * Faça o upload do binário gerado para o Pico.
    3. Conecte ao terminal serial UART:
       * Utilize o software de terminal PuTTY;
-      * Configure a porta serial correta e ajuste a taxa de comunicação.
-   4. Interaja com o menu exibido no terminal:
-      * Escolha uma opção digitando o número correspondente:
-        * **1** - Ligar LED Verde;
-        * **2** - Ligar LED Azul;
-        * **3** - Ligar LED Vermelho;
-        * **4** - Ligar todos os LEDs (Branco);
-        * **5** - Desligar todos os LEDs;
-        * **6** - Acionar o buzzer por 2 segundos.
+      * Configure a porta serial correta e ajuste a taxa de comunicação para 115200.
+   4. Insira um dos comandos listados anteriormente
