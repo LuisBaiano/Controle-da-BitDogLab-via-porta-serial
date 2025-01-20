@@ -40,3 +40,24 @@ Este projeto demonstra como controlar LEDs e um buzzer conectados a um microcont
    * **Buzzer** conectado ao GPIO 21;
    * **Resistor** de 330 Ω conectado ao LED RGB;
    * Conexões de GND compartilhadas entre os periféricos e o Pico.
+
+   ## Instruções de Uso
+
+   1. Configure o ambiente de desenvolvimento:
+      * Instale o **Pico SDK** e configure-o no **VS Code**.
+      * Clone este repositório em sua máquina local.
+   2. Compile e envie o código para o Raspberry Pi Pico W:
+      * Conecte o Pico ao computador via USB;
+      * Compile o projeto utilizando o CMake;
+      * Faça o upload do binário gerado para o Pico.
+   3. Conecte ao terminal serial UART:
+      * Utilize o software de terminal PuTTY;
+      * Configure a porta serial correta e ajuste a taxa de comunicação.
+   4. Interaja com o menu exibido no terminal:
+      * Escolha uma opção digitando o número correspondente:
+        * **1** - Ligar LED Verde;
+        * **2** - Ligar LED Azul;
+        * **3** - Ligar LED Vermelho;
+        * **4** - Ligar todos os LEDs (Branco);
+        * **5** - Desligar todos os LEDs;
+        * **6** - Acionar o buzzer por 2 segundos.
