@@ -38,6 +38,8 @@ Este projeto demonstra como controlar LED RGB e um buzzer conectados Á placa de
 
 ## Demostração
 
+  * Explicação do projeto:
+  * [Demonstração das funcionalidades](https://youtu.be/H9lHIkWzFO8)
 
 ## Configuração do Hardware
 
